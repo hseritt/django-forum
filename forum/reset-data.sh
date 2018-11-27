@@ -2,7 +2,8 @@
 
 function reset_db {
 	echo " Removing database ..."
-    rm -rf db.sqlite3
+    dropdb forum
+    createdb forum -O admin
     echo " Done."
 }
 
